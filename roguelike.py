@@ -17,7 +17,18 @@ running=True
 while running: 
     for event in pygame.event.get(): 
         if event.type==pygame.QUIT 
-        running=False
+        running=False 
+
+keys=pygame.key.get_pressed() 
+if keys[pygame.K_LEFT] or keys[pygame.K_a] 
+    player_x-=SPEED 
+    if keys[pygame.K_RIGHT] or keys[pygame.K_d]: 
+        player_x+=SPEED  
+    if keys[pygame.K_UP] or keys[pygame.K_w]: 
+        player_y-=SPEED 
+    if keys[pygame.K_DOWN] or keys[pygame.K_s]: 
+        player_y+=SPEED
+
 
     screen.full((20,20,30)) 
     pygame.display.flip() 
